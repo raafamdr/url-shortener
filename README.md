@@ -39,8 +39,8 @@ A simple URL shortener service that creates a short URL for a given long URL. Th
 1. Clone the repository:
 
     ```bash
-    $ git clone https://github.com/raafamdr/url-shortener.git
-    $ cd url_shortener
+    git clone https://github.com/raafamdr/url-shortener.git
+    cd url-shortener
     ```
 
 2. Create a `.env` file in the root directory based on the `.env.example` file and make sure to adjust the values according to your setup.
@@ -48,23 +48,24 @@ A simple URL shortener service that creates a short URL for a given long URL. Th
 3. Make the `entrypoint.sh` file executable:
 
     ```bash
-    $ chmod +x entrypoint.sh
+    chmod +x entrypoint.sh
     ```
 
 4. Build and start Docker containers:
 
     ```bash
-    $ docker-compose up --build
+    docker-compose up --build
     ```
 
 ### Usage
 
-Once the containers are up and running, you can access the application's API documentation at: [http://localhost:8000/docs](http://localhost:8000/docs)
+Once the containers are up and running, you can access the application's API documentation at: 
+[http://localhost:8000/docs](http://localhost:8000/docs)
 
 ## Testing
 
 To run the tests, use:
 
 ```
-$ task test
+task test
 ```
