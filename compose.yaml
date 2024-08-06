@@ -1,0 +1,25 @@
+services:
+  database:
+    image: postgres
+    container_name: database
+    env_file:
+      - .env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  url_shortener:
+    image: url_shortener
+    container_name: url_shortener_service
+    entrypoint: ./entrypoint.sh
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    
+volumes:
+  pgdata:
