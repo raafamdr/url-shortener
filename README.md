@@ -59,7 +59,7 @@ A simple URL shortener service that creates a short URL for a given long URL. Th
 
 ### Usage
 
-Once the containers are up and running, you can access the application's API documentation at: 
+Once the containers are up and running, you can access the application's API documentation at:   
 [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ## Testing
